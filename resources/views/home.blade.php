@@ -7,6 +7,13 @@
     <title>HOMEPAGE</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h3>Ecco la lista di alcuni framework per l'ambito web</h3>
+
+    <ul>
+        @foreach($frameworks as $framework)
+          <li>{{$framework}}</li>
+        @endforeach
+    </ul>
+    
 </body>
 </html>

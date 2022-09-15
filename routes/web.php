@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+   
+    $frameworks = [
+
+      'Vue JS',
+      'Angular',
+      'React',
+      'Laravel',
+      'CodeIgnite',
+      'Symfony'
+        
+    ];
+    return view('home', compact('frameworks'));
 });
